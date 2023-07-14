@@ -18,8 +18,8 @@ public class TimelineApplication extends JFrame {
         timelinePanel = new TimelinePanel(textEditor);
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridBagLayout());
-        panel.add(textEditor);
+        panel.setLayout(new BorderLayout());
+        panel.add(textEditor, BorderLayout.CENTER);
 
         JPanel wrapperPanel = new JPanel(new BorderLayout());
         wrapperPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
